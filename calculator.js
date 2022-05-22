@@ -117,8 +117,12 @@ function useOper(e) {
 
 function equals() {
     let result = operate(currentOper, savedValue, currentValue);
-    result = parseFloat(Math.round(result + 'e' + 11) + 'e-' + 11);
-    return result
+    let roundedResult = parseFloat(Math.round(result + 'e' + 11) + 'e-' + 11);
+    if (isNaN(roundedResult)) {
+        return result;
+    } else {
+        return roundedResult;
+    }
 }
 
 function pushEqualSign() {
