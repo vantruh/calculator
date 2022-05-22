@@ -117,7 +117,7 @@ function useOper(e) {
 
 function equals() {
     let result = operate(currentOper, savedValue, currentValue);
-    result = Math.round( result * 100 + Number.EPSILON ) / 100;
+    result = parseFloat(Math.round(result + 'e' + 11) + 'e-' + 11);
     return result
 }
 
