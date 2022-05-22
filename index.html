@@ -8,14 +8,14 @@
 <body>
     <div class="body">
         <div class="display-area">
-            <p class="lesser-display">+-</p>
-            <p class="display">0123456789</p>
+            <p class="lesser-display"></p>
+            <p class="display">0</p>
         </div>
         <div class="buttons">
-            <input type="button" value="+/-" class="button">
-            <input type="button" value="^" class="button">
-            <input type="button" value="DEL" class="button clears">
-            <input type="button" value="C" class="button clears">
+            <input type="button" value="+/-" class="button toggle" id="toggle">
+            <input type="button" value="^" class="button oper-sign">
+            <input type="button" value="DEL" class="button clears" id="delete">
+            <input type="button" value="C" class="button clears" id="clear">
             <input type="button" value="7" class="button digit">
             <input type="button" value="8" class="button digit">
             <input type="button" value="9" class="button digit">
@@ -28,9 +28,9 @@
             <input type="button" value="2" class="button digit">
             <input type="button" value="3" class="button digit">
             <input type="button" value="x" class="button oper-sign">
-            <input type="button" value="." class="button">
+            <input type="button" value="." class="button dot">
             <input type="button" value="0" class="button digit">
-            <input type="button" value="=" class="button">
+            <input type="button" value="=" class="button equal">
             <input type="button" value="/" class="button oper-sign">
         </div>
     </div>
