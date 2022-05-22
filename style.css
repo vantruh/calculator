@@ -89,6 +89,10 @@ body {
     border:3px solid black;
 }
 
+.button:active {
+    border:5px solid black;
+}
+
 .oper-sign, .toggle, .equal {
     background-color: rgb(161, 161, 161);
 }
