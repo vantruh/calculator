@@ -97,7 +97,7 @@ body {
     background-color: rgb(161, 161, 161);
 }
 
-.digit { background: transparent;
+.digit, .dot { background: transparent;
 }
 
 .clears {
