@@ -117,6 +117,7 @@ function useOper(e) {
 
 function equals() {
     let result = operate(currentOper, savedValue, currentValue);
+    result = Math.round( result * 100 + Number.EPSILON ) / 100;
     return result
 }
 
